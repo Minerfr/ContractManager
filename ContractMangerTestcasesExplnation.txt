@@ -1,0 +1,40 @@
+Contract Manager Smart Contract Test Cases
+This document provides a detailed explanation of the test cases for the Contract Manager Smart Contract. Each test case is designed to verify a specific functionality or behavior of the contract, ensuring that it operates as expected.
+
+Test Case: Owner Assignment
+•	Description: Verifies that the contract's owner is set correctly upon deployment.
+•	Expectation: The owner state variable should be equal to the address that deployed the contract.
+
+Test Case: Non-Owner Add Contract
+•	Description: Attempts to add a contract using an address that is not the owner.
+•	Expectation: The transaction should be reverted with an error message indicating that only the owner can call this function.
+
+Test Case: Owner Add Contract
+•	Description: Adds a contract using the owner's address.
+•	Expectation: The contract should be successfully added, and the isContractRegistered function should return true for the added contract's address.
+
+Test Case: Non-Owner Update Description
+•	Description: Attempts to update the description of a contract using an address that is not the owner.
+•	Expectation: The transaction should be reverted with an error message indicating that only the owner can call this function.
+
+Test Case: Owner Update Description
+•	Description: Updates the description of a contract using the owner's address.
+•	Expectation: The description should be successfully updated, and the getContractDescription function should return the new description for the contract's address.
+
+Test Case: Non-Owner Remove Contract
+•	Description: Attempts to remove a contract using an address that is not the owner.
+•	Expectation: The transaction should be reverted with an error message indicating that only the owner can call this function.
+
+Test Case: Owner Remove Contract
+•	Description: Removes a contract using the owner's address.
+•	Expectation: The contract should be successfully removed, and the isContractRegistered function should return false for the removed contract's address.
+
+Test Case: Contract Description Retrieval
+•	Description: Retrieves the description of a registered contract.
+•	Expectation: The getContractDescription function should return the correct description for the contract's address.
+
+Test Case: All Registered Contract Addresses Retrieval
+•	Description: Retrieves all registered contract addresses.
+•	Expectation: The getAllContractAddresses function should return an array containing all registered contract addresses in the order they were added.
+
+
