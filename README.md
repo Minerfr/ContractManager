@@ -1,5 +1,4 @@
-To add the project in vs code use this below command
-git clone -b dravid "https://github.com/Minerfr/ContractManager.git"
+To add the project in vs code use this command ==> git clone -b dravid "https://github.com/Minerfr/ContractManager.git"
 
 # Sample Hardhat Project
 
